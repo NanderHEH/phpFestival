@@ -19,7 +19,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
     }
 
     // Query opbouwen INSER INTO bestellingen
-    
+
     $ticketID = $_POST['ticketid'];
     $aantal = $_POST['aantal'];
     $datum = date('Y-m-d H:i:s');
@@ -28,7 +28,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
     $conn -> query($sql);
     $conn -> close();
 
-    echo "<br>" . $_SESSION['id'];
+    echo "<br>" . $_SESSION['id'];'
+    '
 }
 
 else
